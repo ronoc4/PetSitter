@@ -2,7 +2,7 @@ package com.conor;
 
 /**
  * Created by conor on 3/9/16.
- * 
+ *
  */
 public enum Day {
 

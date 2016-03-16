@@ -13,18 +13,23 @@ public class Pet {
     private String dayOfWeek;
 
     //Constructor for object
-    public Pet(String petName, String animalType, String addressPet, int timeVisit, String day) {
+    public Pet(String petName, String animalType, String addressPet,  String day) {
         this.name = petName;
         this.type = animalType;
         this.address = addressPet;
-        this.numberTimes = timeVisit;
         this.dayOfWeek = day;
     }
 
-
+    public void TimeVisit (int numberTimes) {
+        if (numberTimes >= 6) {
+            System.out.println(numberTimes + " is have too many visits");
+        } else {
+            this.numberTimes = numberTimes;
+            System.out.println("Total number of visits: " + numberTimes);
+        }
+    }
 
     public void printPetInfo() {
-        System.out.println(this.dayOfWeek + ": Visit " + this.name + " the " + this.type + " " + this.numberTimes + " times. "
-        + this.address);
+        System.out.println(this.dayOfWeek + ": Visit " + this.name + " the " + this.type + " " + this.address);
     }
 }
